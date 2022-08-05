@@ -101,7 +101,7 @@ namespace OOP_Hamburgerci_Odev
 
             lblToplamTutar.Text = Siparis.Fiyat.ToString();
             lbxSiparisler.Items.Add(siparis.ToString());
-            lbxSiparisler.Items.Add("Extra malzeme ücreti : " + Siparis.malzemelers.Sum(x => x.MalzemeFiyati));
+            lbxSiparisler.Items.Add("Extra malzeme ücreti : " + ((int)nudAdet.Value * Siparis.malzemelers.Sum(x => x.MalzemeFiyati)));
 
 
 
